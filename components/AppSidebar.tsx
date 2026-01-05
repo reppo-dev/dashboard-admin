@@ -2,6 +2,8 @@ import {
   Calendar,
   ChevronDown,
   ChevronUp,
+  CircleUser,
+  ClipboardIcon,
   Home,
   Inbox,
   Plus,
@@ -64,6 +66,16 @@ const items = [
     icon: Search,
   },
   {
+    title: "payments",
+    url: "/payments",
+    icon: ClipboardIcon,
+  },
+  {
+    title: "John Doe",
+    url: "/users/username",
+    icon: CircleUser,
+  },
+  {
     title: "Settings",
     url: "#",
     icon: Settings,
@@ -78,14 +90,7 @@ const AppSidebar = () => {
           <SidebarMenuItem>
             <SidebarMenuButton asChild>
               <Link href="/">
-                <Image
-                  src="https://static.vecteezy.com/system/resources/previews/002/002/403/large_2x/man-with-beard-avatar-character-isolated-icon-free-vector.jpg"
-                  alt="logo"
-                  width={20}
-                  height={20}
-                  className="rounded-full"
-                />
-                <span>Lama Dev</span>
+                <span>Dashboard</span>
               </Link>
             </SidebarMenuButton>
           </SidebarMenuItem>
